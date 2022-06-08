@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="global.css">
+    <title>Bluenation</title>
+</head>
+<body>
+    <header><div class="title">Bluenation</div></header>
+    <main>
+        <section class="posts container">
+            <article class="post">
+                <figure>
+                    <img src="./post1.jpg" alt="Post image">
+                </figure>
+                <div class="content">
+                    <h2>Fotografie, ktoré si zapamätáte</h2>
+                    <p>Fotíme veľa! Akúkoľvek udalosť zdokumentujeme tak, aby ste si ju zapamätali v čo najkrajšom svetle.</p>
+                </div>
+            </article>
+            <article class="post">
+                <figure>
+                    <img src="./bts.png" alt="Post image">
+                </figure>
+                <div class="content">
+                    <h2>Galéria</h2>
+                    <p>Niečo niečo</p>
+                </div>
+            </article>
+            <article class="post">
+                <figure>
+                    <img src="./cam.jpg" alt="Post image">
+                </figure>
+                <div class="content">
+                    <h2>Videá</h2>
+                    <p>Za kamerou sa vyznáme! Natočíme a zostriháme vám video, ktoré vás poteší a nenechá chladnými.</p>
+                </div>
+            </article>
+            <article class="post">
+                <figure>
+                    <img src="./stream.jpg" alt="Post image">
+                </figure>
+                <div class="content">
+                    <h2>Živé vysielanie</h2>
+                    <p>Dnes už je štandard istý obsah medzi divákov prenášať v reálnom čase. My sa špecializujeme hlavne na internetové prenosy.</p>
+                </div>
+            </article>
+            <article class="post">
+                <figure>
+                    <img src="./bts.png" alt="Post image">
+                </figure>
+                <div class="content">
+                    <h2>Väčšie prenosy</h2>
+                    <p>Vďaka spolupráci s BornToStream vám vieme pomôcť aj so živým prenosom väčších rozmerov v rámci objednávky u nás.</p>
+                </div>
+            </article>
+        </section>
+        <section class="contact">
+            <form class="contactForm" method="POST" action="/api/submit">
+                <div class="input">
+                  <label for="name">Full Name</label>
+                  <input id="name" type="text" name="name" pattern="[A-Za-z]+" required />
+                </div>
+          
+                <div class="input">
+                  <label for="email">Email Address</label>
+                  <input id="email" type="email" name="email" required />
+                </div>
+          
+                <div class="input">
+                    <label for="message">Správa</label>
+                    <textarea id="message" name="message" maxlength="500" required></textarea>
+                  </div>
+                <button type="submit">Submit</button>
+              </form>
+        </section>
+    </main>
+    <footer>
+        <section class="footer-info">
+            Bluenation je firma atakdalej
+        </section>
+        <section class="footer-social">
+            <a href="https://www.facebook.com/bluenation.studio" target="_blank"><img src="./facebook.png" alt="Facebook"></a>
+            <a href="https://www.instagram.com/bluenation.cc" target="_blank"><img src="./instagram.png" alt="Instagram"></a>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@300&display=swap');
+html {
+  font-family: 'Roboto', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  color: #585757;
+  margin: 0;
+}
+header {
+  min-height: 100vh;
+  background-image: url("../topBg.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+  /* background-attachment: fixed; */
+  color: #fff;
+  font-family: 'Bebas Neue', cursive;
+  font-size: clamp(5rem, 6vw, 8rem);
+  text-align: center;
+}
+.title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+.post {
+  margin: 4rem 0;
+}
+img {
+  max-width: clamp(10rem, 50vw, 25rem);
+
+}
+h2, .h2 {
+  font-family: 'Bebas Neue', cursive;
+  font-weight: 400;
+  font-size: clamp(1.75rem, 7vw, 2.5rem);
+  line-height: 1;
+  margin: 0;
+  color: #000;
+}
+p, .paragraph {
+  font-size: 1.25rem;
+  line-height: 1.25;
+  margin: 1rem 0 0;
+  max-width: 67.5ch;
+}
+.post:nth-child(even) {
+  flex-direction: row-reverse;
+}
+.container {
+  padding: 0 1.25rem;
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+.contact {
+  min-height: 100vh;
+  background-image: url("../contactBg.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+  background-attachment: fixed;
+  text-align: center;
+  color: #000;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.contactForm {
+  min-width: 55rem;
+}
+.input {
+  margin-bottom: 1rem;
+	line-height: 1.6;
+}
+
+.input label {
+	display: block;
+  font-weight: bold;
+}
+
+.input input, .input textarea {
+	background: #fff;
+  min-width: clamp(10rem, 50vw, 25rem);
+	border: 1px solid #000;
+	border-radius: 2px;
+	padding: 0.375rem 0.5rem;
+	min-height: 2rem;
+	height: 2rem;
+}
+.input textarea {
+  resize: none;
+}
+button {
+	cursor: pointer;
+  min-width: clamp(10rem, 50vw, 25rem);
+	margin-top: 1.5rem;
+  background-color: rgb(255, 255, 255, 0.1);
+	border-radius: 2px;
+  font-family: 'Roboto', sans-serif;
+  -webkit-font-smoothing: antialiased;
+	padding: 0.75rem;
+	outline: #fff solid 1px;
+	border: none;
+	color: #fff;
+}
+
+button:hover {
+	background-color: rgb(255, 255, 255, 0.3);;
+}
+
+@media screen and (min-width: 810px) {
+  .post {
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+    margin: 5rem 0;
+  }
+  .post figure {
+    flex: 1;
+  }
+  .post .content {
+    flex: 2;
+  }
+}
